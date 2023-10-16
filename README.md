@@ -12,10 +12,19 @@ There are three source datasets:
 * https://en.wikipedia.org/wiki/List_of_regions_of_the_United_States#Census_Bureau%E2%80%93designated_regions_and_divisions
   * This was crawled to generate a list of regional divisions for every US city
   * The license is located here: https://en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License
+ 
+This assignment uses two APIs:
+* https://www.mediawiki.org/wiki/API:Main_page
+  * Used to get revision IDs
+  * Terms and conditions are located here: https://www.mediawiki.org/wiki/API:REST_API#Terms_and_conditions
+* https://api.wikimedia.org/wiki/Lift_Wing_API/Reference/Get_revscoring_articlequality_prediction
+  * Used to get article quality prediction from revision ID
+  * Terms and conditions are located here: https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use
 
 The final output files created by my code are:
 * wp_scored_city_articles_by_state.csv
   * Structure: state (str), regional_division (str), population (float), article_title (str), revision_id (int), article_quality (str). 
 * Tables embedded within the `jjoko_data512_hw2.ipynb` for analysis
 
-
+# Research Implications
+From this assignment, I learned that 
