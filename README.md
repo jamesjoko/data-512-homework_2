@@ -23,7 +23,13 @@ This assignment uses two APIs:
 
 The final output files created by my code are:
 * wp_scored_city_articles_by_state.csv
-  * Structure: state (str), regional_division (str), population (float), article_title (str), revision_id (int), article_quality (str). 
+  * Structure: state (str), regional_division (str), population (float), article_title (str), revision_id (int), article_quality (str). Each row is a municipality of a city within the U.S.
+    * state (str) - The state of the municipality. The states in the dataset are scaped from this page: https://en.wikipedia.org/wiki/Category:Lists_of_cities_in_the_United_States_by_state. The given dataset does not have Connecticut or Nebraska.
+    * regional_division (str) - The region that the municipiality's state belongs to. See section "Census Bureau–designated regions and divisions" here: https://en.wikipedia.org/wiki/List_of_regions_of_the_United_States
+    * population (float) - The 2022 estimated population of the state that the municipality resides in. 
+    * article_title (str) - The title of the municipality's Wikipedia article.
+    * revision_id (int) - The current revision ID of the article page. Every Wikipedia article has associated metadata, including the id of the current page revision.
+    * article_quality (str) - The predicted article quality from ORES. The possible article quality values can be found here: https://en.wikipedia.org/wiki/Wikipedia:Content_assessment
 * Tables embedded within the `jjoko_data512_hw2.ipynb` for analysis
 
 # Research Implications
